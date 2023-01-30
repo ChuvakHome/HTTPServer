@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="https://se.ifmo.ru/~s311683/Lab1/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="Lab1/style.css">
+	<title>Lab1</title>
+</head>
+<body>
+	<header>
+			<div class="header">
+					<span id="header_span">
+						<font face="serif">
+							<a target="_blank" href="https://vk.com/id258730735">Деменев Тимур</a> P3210
+							<br>
+							Вариант <a target="_blank" href="https://se.ifmo.ru/~s311683/Lab1/description.png">10110</a>
+						</font>
+					</span>
+			</div>
+	</header>
+		<div id="content">
+			<table align="center" cellpadding="10%">
+					<tr>
+						<td>
+							<div class="graph" width="300px" height="300px">
+									<svg width="300px" height="300px" xmlns="http://www.w3.org/2000/svg">
+											<line x1="0" y1="150" x2="300" y2="150" stroke="black"/>
+											<polygon points="150,0 144,15 156,15" stroke="black"  fill="black"/>
+											<text x="285" y="140">X</text>
+
+											<line x1="150" x2="150" y1="0" y2="300" stroke="black"/>
+											<polygon points="300,150 285,156 285,144" stroke="black"  fill="black"/>
+											<text x="160" y="15">Y</text>
+
+											<path d="M200 145 v 10" stroke="black"/>
+											<text x="195" y="140">R/2</text>
+
+											<path d="M250 145 v 10" stroke="black"/>
+											<text x="245" y="140">R</text>
+
+											<path d="M100 145 v 10" stroke="black"/>
+											<text x="95" y="140">-R/2</text>
+
+											<path d="M50 145 v 10" stroke="black"/>
+											<text x="45" y="140">-R</text>
+
+											<path d="M145 100 h 10" stroke="black"/>
+											<text x="160" y="105">R/2</text>
+
+											<path d="M145 50 h 10" stroke="black"/>
+											<text x="160" y="55">R</text>
+
+											<path d="M145 200 h 10" stroke="black"/>
+											<text x="160" y="205">-R/2</text>
+
+											<path d="M145 250 h 10" stroke="black"/>
+											<text x="160" y="255">-R</text>
+
+											<polygon class="graph-figure" points="50 150 150 150 150 250"/>
+											<rect class="graph-figure" x="150" y="150" width="50" height="100"/>
+											<path class="graph-figure" d="M150 150 h -50 C 100 150 100 100 150 100"/>
+
+											<circle id="point" cx="150" cy="150" r="4" stroke="white" fill="red" visibility="hidden"/>
+									</svg>
+							</div>
+						</td>
+						<td>
+							<div class="input_form" align="center">
+									<form id="form">
+											<div>
+												X:
+
+												<input type="checkbox" name="x" value="-3">-3</input>
+												<input type="checkbox" name="x" value="-2">-2</input>
+												<input type="checkbox" name="x" value="-1">-1</input>
+												<input type="checkbox" name="x" checked="on" value="0">0</input>
+												<input type="checkbox" name="x" value="1">1</input>
+												<input type="checkbox" name="x" value="2">2</input>
+												<input type="checkbox" name="x" value="3">3</input>
+												<input type="checkbox" name="x" value="4">4</input>
+												<input type="checkbox" name="x" value="5">5</input>
+											</div>
+											<div>
+												Y:
+												<input autocomplete="off" type="text" maxlength="14" id="y" placeholder="(-3; 3)" required/>
+											</div>
+											<div>
+													R:
+
+													<input type="checkbox" checked="on" name="r" value="1">1</input>
+													<input type="checkbox" name="r" value="1.5">1.5</input>
+													<input type="checkbox" name="r" value="2">2</input>
+													<input type="checkbox" name="r" value="2.5">2.5</input>
+													<input type="checkbox" name="r" value="3">3</input>
+											</div>
+											<br>
+											<div class="button_div">
+													<input class="pointer_cursor" id="submit_btn" type="submit" value="Вычислить"/>
+													<input class="pointer_cursor" id="clear_btn" type="button" value="Очистить таблицу"/>
+											</div>
+									</form>
+							</div>
+						</td>
+					</tr>
+				</table>
+		</div>
+	<br>
+	<table align="center" id="result_table">
+	</table>
+	<script type="text/javascript" src="Lab1/script.js"></script>
+</body>
+</html>
